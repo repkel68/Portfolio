@@ -1,0 +1,18 @@
+a {
+    text-decoration: none;
+}
+
+.border-box {
+    border: none;
+    border-radius: 10px;
+    background: var(--dark-color);
+    color: #ffffff; 
+}
+
+:root {
+    --soft-color: #cccccc;
+    --main-color: #445964;
+    --dark-color: #263138;
+    --logo-background: #343434;
+    --soft-blue: #00ccff;
+}

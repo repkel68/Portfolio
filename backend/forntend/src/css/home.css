@@ -1,0 +1,397 @@
+@import url('reset.css');
+@import url('common.css');
+
+/* 헤더 스타일 */
+.header {
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: rgb(74, 74, 74);
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.main_h {
+  position: fixed;
+  max-height: 70px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+  padding-bottom: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 766px) {
+  .main_h {
+    padding-top: 25px;
+  }
+}
+
+.open-nav {
+  max-height: 400px !important;
+}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.sticky {
+  background-color: rgb(74, 74, 74);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.logo {
+  width: 50px;
+  font-size: 25px;
+  color: #cfcfcf;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 766px) {
+  .logo {
+    float: none;
+  }
+}
+
+nav {
+  float: right;
+  width: 60%;
+}
+@media only screen and (max-width: 766px) {
+  nav {
+    width: 100%;
+  }
+}
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+@media only screen and (max-width: 766px) {
+  nav ul {
+    padding-top: 10px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 766px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: auto;
+  }
+}
+nav ul a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+@media only screen and (max-width: 766px) {
+  .mobile-toggle {
+    display: block;
+  }
+}
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+.row {
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin: auto 0;
+}
+
+.content {
+  padding: 50px 2% 250px;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+.name {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.navigation {
+  display: flex;
+  gap: 39px;
+  font-size: 1.5rem;
+}
+
+/* AM 섹션 */
+.AM {
+  background-color: #d9d9d9;
+  height: 55rem;
+}
+
+.AM {
+  text-align: center;
+  font-size: 200%;
+  font-weight: 700;
+}
+
+.AM .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+.AMI {
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+.AM_box {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.AM_b,
+.AM_bb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: -5px 5px 10px #292929;
+  background-color: #b3b3b3;
+}
+
+.AM_b {
+  width: 45%;
+  height: 5rem;
+}
+
+.AM_bb {
+  height: 5rem;
+  width: 95%;
+  margin-top: 2rem;
+}
+
+/* Skill 섹션 */
+.S {
+  background-color: #b2b200;
+  height: 47rem;
+}
+
+.S .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  height: 7rem;
+}
+
+.skill_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 3rem;
+}
+
+.skill p {
+  font-size: 1.4rem;
+  font-weight: bolder;
+  margin-top: auto;
+}
+
+.skill img {
+  height: 100px;
+  width: 100px;
+}
+
+
+/* Projects 섹션 */
+.P {
+  height: 64rem;
+  background-color: #d9d9d9;
+}
+
+.P .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  height: 7rem;
+}
+
+.main {
+  font-family:Arial;
+  width:700px;
+  display:block;
+  margin:0 auto;
+  background-color: #ccc;
+}
+
+.slider_box {
+  margin: 10px;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+}
+
+.Pname {
+  margin: -20px auto 20px;
+  color: black;
+  font-size: 3rem;
+  font-weight: 700;
+  align-items: flex-start;
+}
+
+.detail {
+  display: flex;
+  margin-left: -20px;
+  margin-bottom: 6%;
+}
+
+.detail p {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 120%;
+}
+
+.more {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13%;
+  font-size: larger;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.P img {
+  margin: 5px;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+  border-radius  : 0.5rem;
+  width: 250px;
+  height: 250px;
+}
+
+.nav img {
+  width: 90%;
+  height: 90%;
+}
+
+.action{
+  display:block;
+  margin:100px auto;
+  width:100%;
+  text-align:center;
+  background:#f30;
+}
+
+.action a {
+  display:inline-block;
+  padding:5px 10px; 
+  color:#fff;
+  text-decoration:none;
+}
+
+.action a:hover{
+  background:#000;
+}
+
+.copy {
+  font-size: x-large;
+  font-weight: 100;
+  height: 2.03rem;
+  text-align: center;
+  background-color: rgb(74, 74, 74);
+}
+
+.copy p{
+  margin: auto;
+}
