@@ -8,7 +8,7 @@ const port = 80;
 app.use(express.static("frontend"));
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "\\frontend\\src\\html\\home.html");
+    res.sendFile(__dirname + "/frontend/src/html/home.html");
 });
 
 app.listen(port, () => {
